@@ -23,8 +23,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+         name: add json
+         run: npm init -y
 
+      
       - name: Install dependencies
+      
         run: npm install
 
       - name: Run tests
