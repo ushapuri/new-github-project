@@ -8,12 +8,12 @@ jobs:
 
     strategy:
       matrix:
-        python-version: python-3.14.0-beta.1-win32-x86-freethreaded.zip
+        python-version: python-3.14
 
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
 
